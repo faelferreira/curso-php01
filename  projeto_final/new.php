@@ -1,6 +1,6 @@
-<?php include_once 'topo.php'; ?>
-<?php require_once 'database_cursos.php'; ?>
-<?php verificarLogin() ?>
+<?php include_once 'topo.php';?>
+<?php require_once 'database_cursos.php';?>
+
 
 <div class="cointainer">
 

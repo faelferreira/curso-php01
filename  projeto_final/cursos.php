@@ -1,4 +1,4 @@
-<?php include_once 'topo.php'; ?>
+<?php include_once '_topo.php'; ?>
 <?php require_once 'database_curso.php'; ?>
 
 
@@ -22,8 +22,8 @@
         </thead>
         <tbody>
 
-        <?php if(listaCursos()) : ?>
-        <?php foreach (listaCursos() as $curso) : ?>
+        <?php if(lista_cursos()) : ?>
+        <?php foreach (lista_cursos() as $curso) : ?>
 
             <tr>
                 <th scope="row"><?php echo $curso['id']; ?></th>
@@ -47,7 +47,7 @@
     </table>
 
 	<div class="pull-right">
-    	<a class="btn btn-primary" href="new.php" role="button"><span class="glyphicon glyphicon-plus"></span> Novo</a>
+    	<a class="btn btn-primary" href="/DexterEscola/admin/cursos/new.php" role="button"><span class="glyphicon glyphicon-plus"></span> Novo</a>
 	</div>
 	
 	<div class="clearfix"></div>

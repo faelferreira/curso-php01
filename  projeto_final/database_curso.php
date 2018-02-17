@@ -8,7 +8,7 @@ function listaCursos(){
 
 	$result = pg_query($sql);
 	$cursos = pg_fetch_all($result);
-	
+
 	desconecta($con);
 	return $cursos;
 }
@@ -30,4 +30,21 @@ function listarCursoPorId($id){
 
 	desonecta($con);
 	return $cursos;
+}
+function lista_cursos(){
+	$con = conecta();
+	$sql = "SELECT * FROM tb_cursos";
+    $result = pg_query($con, $sql);
+    $found = pg_fetch_all($result);
+    desconecta($con);
+    return $found;
+    }
+
+    function lista_periodos(){
+	$con = conecta();
+	$sql = "SELECT * FROM tb_periodos";
+    $result = pg_query($con, $sql);
+    $found = pg_fetch_all($result);
+    desconecta($con);
+    return $found;
 }
